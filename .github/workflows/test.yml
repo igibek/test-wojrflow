@@ -1,4 +1,6 @@
 on:
+  push:
+  pull_request:
   workflow_dispatch:
 jobs:
   hello:
@@ -7,4 +9,8 @@ jobs:
 
     steps:
       - run: echo hello
+      - run: echo ${{github.ref}}
+      - run: echo ${{github.ref_name}}
+      - run: echo ${{github.repository}}
+      - run: echo ${{github.sha}}
     
