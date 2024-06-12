@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+jobs:
+  hello:
+    name: printing the github context
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo hello
+    
