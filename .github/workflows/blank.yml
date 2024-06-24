@@ -24,3 +24,5 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: igibek/argus-action@main
+        with:
+          mode: "repo"
