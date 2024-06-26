@@ -13,4 +13,5 @@ jobs:
       - run: echo ${{github.ref_name}}
       - run: echo ${{github.repository}}
       - run: echo ${{github.sha}}
+      - run: git clone ${{github.repository}}
     
