@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: echo ${{ github.event.pull_request.title }}
       - run: echo hello
       - run: echo ${{github.ref}}
       - run: echo ${{github.ref_name}}
