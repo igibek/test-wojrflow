@@ -16,5 +16,6 @@ jobs:
       - run: echo ${{github.repository}}
       - run: echo ${{github.sha}}
       - run: echo ${{github.repositoryUrl}}
+      - uses: actions/checkout@v3
       - run: git clone https://${{github.token}}@github.com/${{github.repository}}
     
